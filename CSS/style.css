@@ -1,170 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Ibarra+Real+Nova:ital,wght@1,600&family=Itim&family=Josefin+Sans:wght@300&family=League+Spartan:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&family=Rubik&family=Unbounded:wght@700&display=swap');
 
-body{
-    margin: 0;
-    padding: 0;
-}
-.container{
-   display: flex;
-   min-height: 100vh;
-}
-.container .side1{
-    background-image: url("/images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.side1 .details{
-    width: 60%;
-    margin-left: 15%;
-}
-.side1 .details img{
-    width: 30%;
-    height: 20%;
-    margin-top: 10%;
-    margin-bottom: 15%;
-}
-.side1 h1{
-    margin-top: 0;
-    letter-spacing: 1.5vw;
-    color:hsl(0, 6%, 24%);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 5vw;
-    font-weight: 600;
-    line-height: 110%;
-    margin-bottom: 4%;
-}
-.side1 h2{
-    margin-top: 0;
-    color: hsl(0, 93%, 68%);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5vw;
-    line-height: 150%;
-}
-span{
-    color:  hsl(0, 36%, 70%);
-}
-.container .side2{
-    background-image: url("/images/hero-desktop.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 40%;
-}
-.email{
-    width: 100%;
-    height: 8vh;
-}
-#email-field{
-    display: block;
-    width: 98%;
-    height: 6vh;
-    padding-left: 1rem;
-    border-top-right-radius: 3vh;
-    border-top-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
-    border-bottom-left-radius: 3vh;
-}
-#email-label{
-    display: block;
-    position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2vw;
-    color:  hsl(0, 93%, 68%);
-    margin-left:3vw;
-    margin-top: 1.5vh;
-}
-.email .img{
-    width: 5%;
-    height: 6vh;
-    background-image: linear-gradient(to right,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    position: absolute;
-    margin-left: 30.5vw;
-    text-align: center;
-    border-top-right-radius: 3vh;
-    border-top-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
-    border-bottom-left-radius: 3vh;
-    cursor: -webkit-grab; cursor: grab;
-    box-shadow: 0.2vh 0.2vw 0.2vh 0.2vw hsl(0, 74%, 74%);
-}
-.email .img:hover{
-    background-image: linear-gradient(to right,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
-
-}
-.email .img img{
-    width: 1.5vw;
-    height: 2vh;
-    margin-top: 1rem;
-}
-.email span{
-    margin-top: 2vh;
-    font-family: 'Josefin Sans', sans-serif;
-    color:hsl(0, 93%, 68%);
-    font-size: 1.5vw;
-}
-#image{
-    display:none;
-}
-#image img{
-    width: 3vw;
-    height: 4.5vh;
-    position: absolute;
-    margin-left: 26vw;
-    margin-top: 1vh;
-    border-radius: 50%;
-}
-
-@media only screen and (max-width:1279px){
-    body{
+@media only screen and (max-width:1279px) {
+    body {
         margin-left: auto;
         margin-right: auto;
     }
-    main{
+
+    main {
         margin-left: auto;
         margin-right: auto;
     }
-    .container{
+
+    .container {
         flex-direction: column-reverse;
         width: 20rem;
         position: relative;
         margin-left: auto;
         margin-right: auto;
     }
-    .container.side1{
+
+    .container.side1 {
         width: 20rem;
         margin-left: auto;
         margin-right: auto;
     }
-    .side1 .details{
+
+    .side1 .details {
         width: 18rem;
         margin-left: 1rem;
     }
-    .container .side2{
+
+    .container .side2 {
         background-image: url("/images/hero-mobile.jpg");
         background-size: cover;
         width: 20rem;
         height: 35vh;
         margin-top: 20%;
     }
-    .side1 h1{
+
+    .side1 h1 {
         text-align: center;
         font-size: 2.5rem;
     }
-    .side1 h2{
+
+    .side1 h2 {
         text-align: center;
         font-size: 1rem;
     }
-    .email .img{
+
+    .email .img {
         margin-left: 15rem;
         width: 3rem;
         height: 6.5vh;
     }
-    .email span{
+
+    .email span {
         font-size: 1rem;
     }
-    .side1 .details .main img{
+
+    .side1 .details .main img {
         width: 10rem;
         height: 3rem;
         margin-top: 0;
@@ -172,17 +66,183 @@ span{
         left: 0;
         position: absolute;
     }
-    .email .img img{
+
+    .email .img img {
         display: block;
         width: 1rem;
         height: 2vh;
         margin-left: 1rem;
         margin-top: 0.5rem;
     }
-    #image img{
+
+    #image img {
         margin-left: 12rem;
         width: 3rem;
         height: 6.5vh;
         margin-top: 0.3vh;
     }
+}
+
+/*Begining of desktop customization*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container .side1 {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    min-height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.side1 .details {
+    width: 60%;
+    margin-left: 15%;
+}
+
+.logo {
+    width: 30%;
+    height: 20%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.side1 h1 {
+    margin-top: 0;
+    letter-spacing: 1.5vw;
+    color: hsl(0, 6%, 24%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 4%;
+}
+
+.side1 h2 {
+    margin-top: 0;
+    color: hsl(0, 93%, 68%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5vw;
+    line-height: 150%;
+}
+
+span {
+    color: hsl(0, 36%, 70%);
+}
+
+.container .side2 {
+    background-image: url("/images/hero-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+.email {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    align-items: center;
+    border: 2px hsl(0, 25%, 81%) solid;
+    border-radius: 40px;
+}
+
+#email-field {
+    width: 98%;
+    height: 6vh;
+    padding-left: 1rem;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+#email-label {
+    display: block;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2vw;
+    color: hsl(0, 93%, 68%);
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+}
+
+.email .img {
+    width: 5%;
+    height: 6vh;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    margin-left: 30.5vw;
+    text-align: center;
+    border-top-right-radius: 3vh;
+    border-top-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+    cursor: -webkit-grab;
+    cursor: grab;
+    box-shadow: 0.2vh 0.2vw 0.2vh 0.2vw hsl(0, 74%, 74%);
+}
+
+.email .img:hover {
+    background-image: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+}
+
+.email .img img {
+    width: 1.5vw;
+    height: 2vh;
+    margin-top: 1rem;
+}
+
+.email span {
+    margin-top: 2vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 93%, 68%);
+    font-size: 1.5vw;
+}
+
+#image {
+    display: none;
+}
+
+#image img {
+    position: absolute;
+    margin-left: 26vw;
+    margin-top: 1vh;
+    border-radius: 50%;
+}
+
+.warning-icon {
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-right: 1rem;
+    display: none;
+}
+
+button {
+    padding: 20px 38px 20px 38px;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 40px;
+    transition: 0.6s;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: drop-shadow(5px 10px 8px hsl(0, 80%, 86%));
+    transition: 0.6s;
+}
+
+.btn-icon {
+    width: 2rem !important;
+    height: 2rem !important;
 }
