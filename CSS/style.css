@@ -1,94 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Ibarra+Real+Nova:ital,wght@1,600&family=Itim&family=Josefin+Sans:wght@300&family=League+Spartan:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&family=Rubik&family=Unbounded:wght@700&display=swap');
 
-@media only screen and (max-width:1279px) {
-    body {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    main {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .container {
-        flex-direction: column-reverse;
-        width: 20rem;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .container.side1 {
-        width: 20rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .side1 .details {
-        width: 18rem;
-        margin-left: 1rem;
-    }
-
-    .container .side2 {
-        background-image: url("/images/hero-mobile.jpg");
-        background-size: cover;
-        width: 20rem;
-        height: 35vh;
-        margin-top: 20%;
-    }
-
-    .side1 h1 {
-        text-align: center;
-        font-size: 2.5rem;
-    }
-
-    .side1 h2 {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .email .img {
-        margin-left: 15rem;
-        width: 3rem;
-        height: 6.5vh;
-    }
-
-    .email span {
-        font-size: 1rem;
-    }
-
-    .side1 .details .main img {
-        width: 10rem;
-        height: 3rem;
-        margin-top: 0;
-        top: 0;
-        left: 0;
-        position: absolute;
-    }
-
-    .email .img img {
-        display: block;
-        width: 1rem;
-        height: 2vh;
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-    }
-
-    #image img {
-        margin-left: 12rem;
-        width: 3rem;
-        height: 6.5vh;
-        margin-top: 0.3vh;
-    }
-}
-
 /*Begining of desktop customization*/
 body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     display: flex;
     min-height: 100vh;
@@ -99,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
-    min-height: 100vh;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -151,7 +66,7 @@ span {
     height: 7vh;
     display: flex;
     flex-direction: row;
-    margin-top: 10vh;
+    margin-top: 5vh;
     align-items: center;
     border: 2px hsl(0, 25%, 81%) solid;
     border-radius: 40px;
@@ -165,17 +80,6 @@ span {
     border: none;
     outline: none;
 }
-
-#email-label {
-    display: block;
-    position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2vw;
-    color: hsl(0, 93%, 68%);
-    margin-left: 3vw;
-    margin-top: 1.5vh;
-}
-
 .email .img {
     width: 5%;
     height: 6vh;
@@ -202,14 +106,6 @@ span {
     height: 2vh;
     margin-top: 1rem;
 }
-
-.email span {
-    margin-top: 2vh;
-    font-family: 'Josefin Sans', sans-serif;
-    color: hsl(0, 93%, 68%);
-    font-size: 1.5vw;
-}
-
 #image {
     display: none;
 }
@@ -245,4 +141,72 @@ button:hover {
 .btn-icon {
     width: 2rem !important;
     height: 2rem !important;
+}
+#email-error{
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 93%, 68%);
+    font-size: 1.5vw;
+}
+
+
+@media only screen and (max-width:1279px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        flex-direction: column-reverse;
+        width: 20rem;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .side1{
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .side1 .details {
+        width: 18rem;
+        margin-left: 1rem;
+    }
+    .container .side2{
+        background-image: url("/images/hero-mobile.jpg");
+        background-size: cover;
+        width: 20rem;
+        height: 35vh;
+        margin-top: 20%;
+    }
+    .side1 h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .side1 h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .logo{
+        width: 10rem;
+        height: 3rem;
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .email{
+        height:4vh;
+        margin-top: 3vh;
+    }
+    button{
+        padding: 3px 20px 3px 20px;
+    }
+    .warning-icon{
+        margin-right: 0.5rem;
+    }
+
 }
